@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+    background-color: #f8f9fa;
+}
+
+h1, h3 {
+    color: #01060c;
+}
+
+.lead {
+    color: #010a11;
+}
+
+.container {
+    max-width: 1800px;
+}
+
+.custom-file-label {
+    text-overflow: ellipsis;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Hover effect for the image */
+img:hover {
+    transform: scale(1.09);
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.nav-tabs .nav-link {
+    font-size: 24px;
+}

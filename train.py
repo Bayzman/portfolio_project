@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
+""" Training Script """
+
 import os
 from fastai.vision.all import *
 from duckduckgo_search import DDGS
-# from PIL import Image
-# import time
 
 
-def search_images(term, max_images=30):
+def search_images(term, max_images=64):
     """ Search for images to train on """
     print(f'Searching for "{term}"')
     return L(DDGS().images(term, max_results=max_images)).itemgot('image')
@@ -50,7 +50,7 @@ def train_classifier(categories):
 
     learn = vision_learner(dls, resnet34, metrics=accuracy)
     learn.fine_tune(5)
-    model_save_path = f'../models/export.pkl'
+    model_save_path = '../models/export.pkl'
     learn.export(model_save_path)
     print('Training complete!')
     print(f'Model saved to {model_save_path}')

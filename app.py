@@ -59,7 +59,7 @@ def train_classifier():
         except subprocess.CalledProcessError as e:
             print(f"Error while running train.py: {e}")
             print(f"Error output: {e.stderr}")
-            flash("An error occurred during training", {e.stderr}, 'error')
+            flash("An error occurred during training")
 
         return redirect(url_for('train_classifier'))
 
