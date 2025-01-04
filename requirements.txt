@@ -1,0 +1,4 @@
+flask
+fastai
+pillow
+duckduckgo_search
