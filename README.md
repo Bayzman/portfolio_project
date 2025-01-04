@@ -38,3 +38,7 @@ To run this project locally, follow these steps:
 5. **Access the application**:
    ```bash
    Open your browser and navigate to http://127.0.0.1:5000/
+
+## Contributing
+
+Feel free to contribute and make suggestions on how to improve the app. For any inquiries or feedback, please contact me at bassmaninno102@gmail.com. Thank you! 
