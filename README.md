@@ -1,6 +1,6 @@
 # ALX Portfolio Project (Image Classifier)
 
-This project combines my interest in Computer Vision and Software Engineering. With the aid of this app, users can have fun training a Convolutional Neural Network (CNN) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained model on test images.
+This project combines my interest in Computer Vision and Software Engineering. Users can have fun training a Convolutional Neural Network (CNN) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained model on test images.
 
 ## Features
 ![Home Page Screenshot](assets/homepage_screenshot.png)
