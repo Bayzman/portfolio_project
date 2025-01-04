@@ -7,10 +7,10 @@ This project combines my interest in Computer Vision and Software Engineering. U
 
 ## Technologies Used
 
-- **Python**: Backend development.
+- **Python**: Backend development
 - **FastAI**: For training the Convolutional Neural Network
-- **Flask**: Web framework for building the application.
-- **HTML/CSS**: Frontend structure and styling.
+- **Flask**: Web framework for building the application
+- **HTML/CSS**: Frontend structure and styling
 
 ## Installation
 
