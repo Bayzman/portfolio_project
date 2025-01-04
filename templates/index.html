@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Spread tabs across the width of the screen */
+        .nav-tabs {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-item {
+            flex-grow: 1; /* Allow each item to take equal width */
+            text-align: center; /* Center text inside each tab */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Image Classifier</h1>
+        <p class="lead text-center">Train, then classify an image</p>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="train-tab" data-toggle="tab" href="#train" role="tab" aria-controls="train" aria-selected="true">Train a Classifier</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="predict-tab" data-toggle="tab" href="#predict" role="tab" aria-controls="predict" aria-selected="false">Classify an Image</a>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="myTabContent">
+            <!-- Train Classifier Tab -->
+            <div class="tab-pane fade show active" id="train" role="tabpanel" aria-labelledby="train-tab">
+                <!-- <h3>Train a Classifier</h3> -->
+                <p>This page allows you to train a custom classifier based on a list of object categories you specify</p>
+                <a href="{{ url_for('train_classifier') }}" class="btn btn-primary">Train a Model</a>
+            </div>
+
+            <!-- Predict Tab -->
+            <div class="tab-pane fade" id="predict" role="tabpanel" aria-labelledby="predict-tab">
+                <!-- <h3>Classify an Image</h3> -->
+                <p>This page allows you to upload an image and classify it using the trained model</p>
+                <a href="{{ url_for('predict') }}" class="btn btn-primary">Make a Prediction</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
