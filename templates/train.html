@@ -18,16 +18,49 @@
             {% endif %}
         {% endwith %}
         
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             <div class="form-group">
+                <label for="data_option">Do you have your own training data?</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data_option" id="own_data_yes" value="yes">
+                    <label class="form-check-label" for="own_data_yes">Yes, I have my own data</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="data_option" id="own_data_no" value="no" checked>
+                    <label class="form-check-label" for="own_data_no">No, I don't have my own data</label>
+                </div>
+            </div>
+
+            <div id="data_upload_section" class="form-group" style="display:none;">
+                <label for="data_upload">Upload your data as a zip file (ensure each class is in its own folder, with at least two classes):</label>
+                <input type="file" id="data_upload" name="data_upload" class="form-control-file">
+            </div>
+
+            <div id="categories_section" class="form-group">
                 <label for="categories">Enter categories to classify (comma-separated):</label>
                 <input type="text" id="categories" name="categories" class="form-control" placeholder="e.g., cat, dog, flower">
             </div>
+
             <button type="submit" class="btn btn-primary">Start Training</button>
         </form>
 
         <p class="mt-3">Note: Training may take a few minutes. Please wait for the model to finish training.</p>
         <p class="mt-3"><a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a></p>
     </div>
+
+    <script>
+        // Show or hide the upload section based on user's choice
+        document.querySelectorAll('input[name="data_option"]').forEach((elem) => {
+            elem.addEventListener('change', function () {
+                if (document.getElementById('own_data_yes').checked) {
+                    document.getElementById('data_upload_section').style.display = 'block';
+                    document.getElementById('categories_section').style.display = 'none';
+                } else {
+                    document.getElementById('data_upload_section').style.display = 'none';
+                    document.getElementById('categories_section').style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
