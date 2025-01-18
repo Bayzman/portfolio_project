@@ -1,16 +1,16 @@
-# ALX Portfolio Project (Image Classifier using Convolutional Neural Networks)
+# ALX Portfolio Project (Image Classifier)
 
-This project combines my interest in Computer Vision and Software Engineering. With the aid of this app, users can have fun training a Convolutional Neural Network (CNN) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained model on test images.
+This app enables users have fun training Convolutional Neural Networks (CNNs) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained models on test images.
 
 ## Features
 ![Home Page Screenshot](assets/homepage_screenshot.png)
 
 ## Technologies Used
 
-- **Python**: Backend development.
+- **Python**: Backend development
 - **FastAI**: For training the Convolutional Neural Network
-- **Flask**: Web framework for building the application.
-- **HTML/CSS**: Frontend structure and styling.
+- **Flask**: Web framework for building the application
+- **HTML/CSS**: Frontend structure and styling
 
 ## Installation
 
@@ -24,12 +24,12 @@ To run this project locally, follow these steps:
 
 2. **Create a virtual environment**:
    ```bash
-   python3 -m venv venv
+   python3 -m venv portfolio_env
    source venv/bin/activate
 
 3. **Install the required packages**:
    ```bash
-   pip install
+   pip install -r requirements.txt
 
 4. **Run the application**:
    ```bash
@@ -37,4 +37,8 @@ To run this project locally, follow these steps:
 
 5. **Access the application**:
    ```bash
-   Open your browser and navigate to http://127.0.0.1:5000/.
+   Open your browser and navigate to http://127.0.0.1:5000/
+
+## Contributing
+
+Feel free to contribute and make suggestions on how to improve the app. For any inquiries or feedback, please contact me at bassmaninno102@gmail.com. Thank you! 
