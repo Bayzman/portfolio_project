@@ -1,6 +1,6 @@
 # ALX Portfolio Project (Image Classifier)
 
-This app enables users have fun training Convolutional Neural Networks (CNNs) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained models on test images.
+A web-based tool to train image classifiers using either user-provided data or images scraped from the web. This app enables users have fun training Convolutional Neural Networks (CNNs) to classify common images of their choice without worrying about how CNNs work, and can evaluate the performance of their trained models on test images.
 
 ## Features
 ![Home Page Screenshot](assets/homepage_screenshot.png)
