@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 2. **Create a virtual environment**:
    ```bash
-   python3 -m venv venv
+   python3 -m venv portfolio_env
    source venv/bin/activate
 
 3. **Install the required packages**:
